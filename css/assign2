@@ -1,193 +1,87 @@
-*{
+* {
   box-sizing: border-box;
 }
-body{
-font-family: calibri; cursive; arial;
-font-size: 15px;
-}
 
-h1{
-  text-align: center;
-  font-size: 175%;
-
-
-}
-h2{
-  font-size: 175%;
-}
-article {
-  font-size: 125%;
-  clear: both;
-  margin: 15px 10px;
-  
-}
-section{
+div.menu-item {
+  border: 1px solid black;
   position: relative;
-  border: 1px solid #000;
-  margin: 6px 5px;
-  background-color: #ddd;
+  padding: 0 10px;
+  margin: 0 auto 30px;
+  background-color: #bbb;
 }
 
-.section-title{
-  border: 1px solid #000;
-  margin: 0px 0px 12px 0px;
-  float: right;
-  padding: 3px 17px; /* The padding is really not necessary, but I didn't want to take it out, since it was the first original idea */
-  color:#fff;
-  min-width: 200px;  /* this is not necessary either, but I added it so all the boxes of the titles have the same width  */
+div.menu-item > p {
+  margin: 30px 5px 15px;
+}
+
+section > div:nth-child(1) .section-title {
+  background-color: pink;
+}
+section > div:nth-child(2) .section-title {
+  background-color: red;
+  color: white;
+}
+section > div:nth-child(3) .section-title {
+  background-color: gold;
+}
+
+div > span.title {
+  font-size: 1.75em;
+}
+body > div {
+  margin-top: 30px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.text-center {
   text-align: center;
-  /* I didn't use absolute position here, either since I flotaed it to the right and cleared the sides of the article
-  tab (line 17) so the browser woudln't render it next to the section title */
 }
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  width: 100px;
 
-#title01{
-  background-color: #ec405a;
-}
-
-#title02{
-  background-color: #39b2c7;
-}
-
-#title03{
-  background-color: #1fd26a;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 
-
-
-/* Based on the responsive framework developed by instructor ychaikin in Lecture 24 */
-.row {
-  width: 100%;
-}
-/********** Large devices only (screens bigger or equal to 992px wide) **********/
+/********** PC **********/
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-4, .col-lg-12 {
     float: left;
-    padding: 10px;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
+    padding: 0 15px;
   }
   .col-lg-4 {
     width: 33.33%;
   }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
 }
-/********** Medium devices only  (screens between 768px and 991px included)**********/
+
+/********** Tablet **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-6, .col-md-12 {
     float: left;
-    padding: 10px;
+    padding: 0 15px;
   }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
+
   .col-md-6 {
     width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
   }
   .col-md-12 {
     width: 100%;
   }
 }
-/********** Small devices only  (screens smaller or equal to 767px wide) **********/
+
+/********** Mobile **********/
 @media (max-width: 767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sd-12 {
     float: left;
-    padding: 10px;
-  }
-  section{
-  margin: 25px 5px;
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
     width: 100%;
+    padding: 0 15px;
   }
 }
