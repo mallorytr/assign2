@@ -67,7 +67,7 @@ p.content {
 
 /********** Desktop view **********/
 @media (min-width: 992px) {
-  .col-dtp-4 {
+  .col-lg-1 {
     float: left;
     width: 33.33%;
   }
@@ -75,22 +75,22 @@ p.content {
 
 /********** Tablet view **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-tbl-6, .col-tbl-12 {
+  .col-md-1, .col-md-2 {
     float: left;
   }
 
-  .col-tbl-6 {
+  .col-md-1 {
     width: 50%;
   }
 
-  .col-tbl-12 {
+  .col-med-2 {
     width: 100%;
   }
 }
 
 /********** Mobile view **********/
 @media (max-width: 767px) {
-  .col-mob-12 {
+  .col-sm-1 {
     width: 100%;
     float: left;
   }
