@@ -1,9 +1,12 @@
 /********** Base styles *********  */ 
  * { 
-   box-sizing: border-box;
-   margin: 0; 
-   padding: 0;    
+   box-sizing: border-box;  
  } 
+ 
+ body {
+    margin: 0;
+    padding: 0;
+}
  
 
  h1 { 
@@ -26,9 +29,7 @@
 	background-color : pink;
 	border: 1px solid black;
 	width : 100px;	
-	
-	
- 	 
+		 
 	
 }
 
@@ -70,12 +71,12 @@
   
 
  } 
- /* 
+ 
  div#container { 
    background-color:  gray;
    position: relative; 
   top: 60px; 
-*/
+
  p { 
    border: 1px solid black; 
    background-color: gray; 
