@@ -71,10 +71,11 @@
 
  } 
  
- div#container { 
+/* div#container { 
    background-color:  gray;
    position: relative; 
   top: 60px; 
+  */
 
  p { 
    border: 1px solid black; 
